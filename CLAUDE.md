@@ -16,3 +16,10 @@ projetos/trajetória. Público-alvo: gente decidindo se contrata ele.
 - Next.js 16 (App Router) — este projeto usa uma versão nova o suficiente pra ter
   diferenças do que está no seu treinamento; ler `node_modules/next/dist/docs/`
   antes de usar uma API que pareça familiar mas possa ter mudado (ver `AGENTS.md`).
+
+## Preview local
+Esta pasta fica FORA do projeto onde a sessão de Claude Code roda (`Algoritimo/`),
+então o `.claude/launch.json` do projeto não consegue iniciar o dev server aqui
+(sandbox bloqueia acessar diretório-pai). Rodar manualmente:
+`npm run dev -- -p 3100` (em background) e abrir `http://localhost:3100` na
+Browser pane via `preview_start` com `url` (não `name`).
